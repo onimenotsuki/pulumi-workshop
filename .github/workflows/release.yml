@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Installing dependencies
-        uses: actions/setup-node@v3.5
+        uses: actions/setup-node@v3
         with:
           node-version-file: package.json
       - name: Configure AWS Credentials
