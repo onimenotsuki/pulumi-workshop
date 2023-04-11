@@ -24,9 +24,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - run: npm install
       - uses: pulumi/actions@v3
-        if:
-          contains(github.base_ref, 'develop')
-          || contains(github.base_ref, 'features')
         with:
           command: preview
           stack-name: pulumi-workshop-dev-stack # When using an individual account, only use stack-name.
