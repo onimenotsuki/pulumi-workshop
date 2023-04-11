@@ -25,7 +25,7 @@ jobs:
       - run: npm install
       - uses: pulumi/actions@v3
         if:
-          contains(github.base_ref, 'development')
+          contains(github.base_ref, 'develop')
           || contains(github.base_ref, 'features')
         with:
           command: preview
