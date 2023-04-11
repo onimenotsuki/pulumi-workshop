@@ -1,4 +1,4 @@
-name: Pulumi
+name: Simple pulumi demo
 on:
   push:
     branches:
@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3.5
+      - name: Installing dependencies
+        uses: actions/setup-node@v3.5
         with:
           node-version-file: package.json
       - name: Configure AWS Credentials
@@ -28,6 +29,6 @@ jobs:
           || contains(github.base_ref, 'features')
         with:
           command: preview
-          stack-name: dev # When using an individual account, only use stack-name.
+          stack-name: pulumi-workshop-dev-stack # When using an individual account, only use stack-name.
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
