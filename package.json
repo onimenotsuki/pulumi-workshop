@@ -1,0 +1,16 @@
+{
+    "name": "pulumi-workshop",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^16",
+        "@typescript-eslint/eslint-plugin": "^5.58.0",
+        "@typescript-eslint/parser": "^5.58.0",
+        "eslint": "^8.38.0",
+        "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "@pulumi/aws": "^5.0.0",
+        "@pulumi/awsx": "^1.0.0",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}
