@@ -26,6 +26,6 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           command: up
-          stack-name: onimeno/pulumi-workshop-dev-stack
+          stack-name: onimeno/aws-typescript/pulumi-workshop-dev-stack
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
