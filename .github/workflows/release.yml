@@ -25,7 +25,7 @@ jobs:
       - run: npm install
       - uses: pulumi/actions@v3
         with:
-          command: preview
-          stack-name: onimenotsuki/pulumi-workshop/dev
+          command: up
+          stack-name: onimeno/aws-typescript/pulumi-workshop-dev-stack
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
