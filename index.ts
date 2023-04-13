@@ -3,7 +3,7 @@ import * as aws from '@pulumi/aws';
 import * as awsx from '@pulumi/awsx';
 
 // Create a new stack
-const stack = new pulumi.Stack('nextjs-website');
+const stack = new pulumi.Stack('pulumi-workshop-dev-edgar-talledos-s3-bucket');
 
 // Create a new VPC
 const vpc = new awsx.ec2.Vpc('pulumi-workshop-vpc', {
